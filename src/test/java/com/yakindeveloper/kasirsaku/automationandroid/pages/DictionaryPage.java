@@ -1,25 +1,18 @@
 package com.yakindeveloper.kasirsaku.automationandroid.pages;
 
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class DictionaryPage extends PageObject {
-    @FindBy(id = "com.yakindeveloper.bukakasir:id/button_get_started")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button")
     private WebElementFacade logoGetStarted;
 
 
-   @FindBy(name="search")
+    @FindBy(name = "search")
     private WebElementFacade searchTerms;
 
-    @FindBy(name="go")
+    @FindBy(name = "go")
     private WebElementFacade lookupButton;
 
     public void enter_keywords(String keyword) {
@@ -40,7 +33,7 @@ public class DictionaryPage extends PageObject {
         System.out.println("123");
     }
 
-    public void clickLogo(){
+    public void clickLogo() {
         logoGetStarted.click();
     }
 
