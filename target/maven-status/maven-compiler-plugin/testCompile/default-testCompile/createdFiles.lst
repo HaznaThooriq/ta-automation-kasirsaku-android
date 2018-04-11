@@ -1,7 +1,0 @@
-com\yakindeveloper\kasirsaku\automationandroid\GoSoftMobileDriver.class
-com\yakindeveloper\kasirsaku\automationandroid\pages\AppsPage.class
-com\yakindeveloper\kasirsaku\automationandroid\steps\serenity\EndUserSteps.class
-com\yakindeveloper\kasirsaku\automationandroid\steps\DefinitionSteps.class
-com\yakindeveloper\kasirsaku\automationandroid\steps\AppsSteps.class
-com\yakindeveloper\kasirsaku\automationandroid\DefinitionTestSuite.class
-com\yakindeveloper\kasirsaku\automationandroid\pages\DictionaryPage.class
