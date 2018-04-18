@@ -6,8 +6,3 @@ Feature: Open KasirSaku APK
   Scenario: Open apk
     Given user open
     Then logo will appear
-    When user click logo get started
-    Then button login is displayed
-    When user click login button
-    When user type username and password
-    Then user already login
