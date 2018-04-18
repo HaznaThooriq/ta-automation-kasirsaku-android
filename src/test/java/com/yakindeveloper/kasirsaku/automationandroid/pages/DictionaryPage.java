@@ -5,25 +5,14 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
 public class DictionaryPage extends PageObject {
-    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button")
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/button_get_started")
     private WebElementFacade logoGetStarted;
 
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/button_login_welcome")
+    private WebElementFacade btnLogin;
 
-    @FindBy(name = "search")
-    private WebElementFacade searchTerms;
 
-    @FindBy(name = "go")
-    private WebElementFacade lookupButton;
-
-    public void enter_keywords(String keyword) {
-        //searchTerms.type(keyword);
-    }
-
-    public void lookup_terms() {
-        lookupButton.click();
-    }
-
-    public void logo2() {
+    public void openApk() {
         System.out.println("success");
     }
 
@@ -35,6 +24,13 @@ public class DictionaryPage extends PageObject {
 
     public void clickLogo() {
         logoGetStarted.click();
+        waitABit(1000L);
+    }
+
+    public void btnLogin(){
+        btnLogin.isDisplayed();
+        waitABit(1000L);
+        btnLogin.click();
     }
 
 }
