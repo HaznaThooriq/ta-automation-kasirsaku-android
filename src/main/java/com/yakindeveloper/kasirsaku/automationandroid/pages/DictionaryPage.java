@@ -8,6 +8,12 @@ public class DictionaryPage extends PageObject {
     @FindBy(id = "com.yakindeveloper.bukakasir:id/button_get_started")
     private WebElementFacade logoGetStarted;
 
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/et_email_login")
+    private WebElementFacade fieldEmail;
+
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/et_password_login")
+    private WebElementFacade fieldPassword;
+
     @FindBy(id = "com.yakindeveloper.bukakasir:id/button_login_welcome")
     private WebElementFacade btnLogin;
 
@@ -17,14 +23,19 @@ public class DictionaryPage extends PageObject {
     }
 
     public void logo() {
-        System.out.println("test");
-        logoGetStarted.isDisplayed();
-        System.out.println("123");
     }
 
     public void clickLogo() {
+        /*System.out.println("lili");
         logoGetStarted.click();
-        waitABit(1000L);
+        System.out.printf("LALA");
+        waitABit(1000L);*/
+        fieldEmail.click();
+        fieldEmail.sendKeys("kasir_saku");
+        fieldPassword.sendKeys("kasir_saku");
+        /*typeInto(fieldEmail, "kasir_saku");
+        fieldPassword.click();
+        typeInto(fieldPassword, "kasir_saku");*/
     }
 
     public void btnLogin(){

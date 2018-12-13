@@ -6,3 +6,4 @@ Feature: Open KasirSaku APK
   Scenario: Open apk
     Given user open
     Then logo will appear
+    Then user click logo get started

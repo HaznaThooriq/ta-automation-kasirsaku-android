@@ -30,22 +30,4 @@ public class AppsSteps {
     public void buttonLoginIsDisplayed() throws Throwable {
         dictionaryPage.btnLogin();
     }
-
-    @When("^user click login button$")
-    public void userClickLoginButton() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @When("^user type username and password$")
-    public void userTypeUsernameAndPassword() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @Then("^user already login$")
-    public void userAlreadyLogin() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
 }
