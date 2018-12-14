@@ -20,6 +20,12 @@ public class LoginPage extends PageObject {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView")
     private WebElementFacade logoKasirsakuHomeActivity;
 
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/tv_daftar")
+    private WebElementFacade btnRegister;
+
+    @FindBy(id = "com.yakindeveloper.bukakasir:id/tv_lupa_password")
+    private WebElementFacade btnLupaPassword;
+
 
     public boolean logoLoginIsDisplayed() {
         return logoLogin.isVisible();
@@ -34,9 +40,13 @@ public class LoginPage extends PageObject {
     }
     public void clickBtnLogin(){
         btnLogin.isVisible();
-        waitABit(1000L);
         btnLogin.click();
-        waitABit(100000L);
+        waitABit(1000L);
+    }
+
+    public void clickBtnRegister(){
+        btnRegister.click();
+        waitABit(1000L);
     }
 
 

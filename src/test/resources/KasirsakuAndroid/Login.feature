@@ -2,7 +2,7 @@ Feature: Login kasirsaku Apps
 
   Narrative:
   As a user
-  I want to login at kasirsaku webpage
+  I want to login at kasirsaku android Apps
 
   @Login
   Scenario: user login at kasirsaku App happyflow
