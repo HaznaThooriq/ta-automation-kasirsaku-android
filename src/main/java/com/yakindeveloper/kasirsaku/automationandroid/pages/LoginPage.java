@@ -48,7 +48,4 @@ public class LoginPage extends PageObject {
         btnRegister.click();
         waitABit(1000L);
     }
-
-
-
 }

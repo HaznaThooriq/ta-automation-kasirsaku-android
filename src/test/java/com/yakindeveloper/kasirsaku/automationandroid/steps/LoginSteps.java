@@ -31,4 +31,8 @@ public class LoginSteps {
 
     }
 
+    @Then("^user click Register Button$")
+    public void userClickRegisterButton() {
+        loginPage.clickBtnRegister();
+    }
 }
