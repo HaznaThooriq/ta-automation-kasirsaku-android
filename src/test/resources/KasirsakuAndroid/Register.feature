@@ -41,7 +41,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as 'Surabaya'
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
 
   @NoFillTokoErrorFlow
@@ -55,7 +55,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as 'Surabaya'
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
   @NoFillKotaErrorFlow
   Scenario: user Test API Signup - errorflow Tanpa Mengisikan field Kota
@@ -68,7 +68,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as ''
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
   @NoFillUsernameErrorFlow
   Scenario: user Test API Signup - errorflow Tanpa Mengisikan field Username
@@ -81,7 +81,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as 'Surabaya'
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
   @NoFillEmailErrorFlow
   Scenario: user Test API Signup - errorflow Tanpa Mengisikan field Email
@@ -94,7 +94,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as 'Surabaya'
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
   @NoFillPhoneErrorFlow
   Scenario: user Test API Signup - errorflow Tanpa Mengisikan field Phone
@@ -107,7 +107,7 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as ''
     When user type kota as 'Surabaya'
     When user type password as 'm4kmurj4y4'
-    Then user already registered
+    Then user cant register
 
   @NoFillPasswordErrorFlow
   Scenario: user Test API Signup - errorflow Tanpa Mengisikan field Password
@@ -120,4 +120,4 @@ Feature: Register kasirsaku Apps
     When user type nomor telefon as '088230236000'
     When user type kota as 'Surabaya'
     When user type password as ''
-    Then user already registered
+    Then user cant register

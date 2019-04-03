@@ -15,7 +15,7 @@ public class LoginSteps {
         loginPage.logoLoginIsDisplayed();
     }
 
-    @When("^user type username as '(.*)' and password as '(.*)'$")
+    @When("^user type username Login as '(.*)' and password as '(.*)'$")
     public void userTypeUsernameAndPassword(String username, String password) {
         loginPage.typeUsernamePassword(username, password);
         loginPage.clickBtnLogin();
