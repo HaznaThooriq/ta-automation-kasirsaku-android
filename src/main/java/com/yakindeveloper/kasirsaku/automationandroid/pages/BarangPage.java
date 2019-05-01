@@ -1,15 +1,17 @@
 package com.yakindeveloper.kasirsaku.automationandroid.pages;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.internal.TouchAction;
 import org.openqa.selenium.interactions.touch.TouchActions;
 
-import java.net.URL;
-
 public class BarangPage extends PageObject {
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout")
+    private WebElementFacade fieldBarangTehPucuk;
+//    private WebElement fieldBarangTehPucuk = getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.widget.LinearLayout"));
+
     @FindBy(id = "com.yakindeveloper.bukakasir:id/et_nama_create_barang")
     private WebElementFacade fieldNamaBarang;
 
@@ -83,13 +85,23 @@ public class BarangPage extends PageObject {
     }
 
     public void longpressTehPucuk(){
+
         //getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout")).click();
        /* TouchAction Action = new TouchAction((PerformsTouchActions) getDriver());
         Action.longPress(getDriver().findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout"))).perform();
 */
-/*        TouchActions action = new TouchActions(());
-        action.longPress(getDriver().findElement(By.id("com.yakindeveloper.bukakasir:id/search_src_text")));
-        action.perform();*/
+//       GoSoftMobileDriver driver = new GoSoftMobileDriver();
+//        TouchActions action = new TouchActions(getDriver());
+//        action.longPress(getDriver().findElement(By.id("com.yakindeveloper.bukakasir:id/search_src_text")));
+//        action.perform();
+//
+//        buttonAddBarang
+
+//        fieldBarangTehPucuk.click();
+
+
+//        TouchActions ac=new TouchActions(getDriver());
+//        ac.longPress(element(fieldBarangTehPucuk)).perform();
 
     }
     

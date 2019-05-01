@@ -2,7 +2,15 @@ Feature: Pembelian kasirsaku Apps
 
   Narrative:
   As a user
-  I want to Barang at kasirsaku android Apps
+  I want to Pembelian at kasirsaku android Apps
 
-  @CRUDBarangHappyFlow
-  Scenario: user melakukan CRUD Barang - happyflow
+  @PembelianHappyFlow
+  Scenario: user melakukan Pembelian Barang - happyflow
+    Given user click btn search
+    When user type barang
+    Then user click btn Add To Cart
+    Then user click btn Checkout
+    And user type total bayar pelanggan
+    Then user click btn bayar
+    And user click btn Ok
+    Then user click btn Selesai
