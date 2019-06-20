@@ -46,7 +46,7 @@ public class GoSoftMobileDriver implements DriverSource {
             if (!Boolean.parseBoolean(prop.getProperty("appium.usingappiumserver"))) {
                 // Jika appium tidak di start secara manual
                 builder = new AppiumServiceBuilder();
-                builder.withIPAddress("127.0.0.1");
+                builder.withIPAddress("10.8.0.3");
                 builder.usingPort(Integer.parseInt(prop.getProperty("appium.port")));
                 builder.withArgument(GeneralServerFlag.SESSION_OVERRIDE);
                 builder.withArgument(GeneralServerFlag.LOG_LEVEL, "error");
@@ -58,7 +58,7 @@ public class GoSoftMobileDriver implements DriverSource {
                 }
                 service.start();
             }
-            ANDROID_DRIVER = new AndroidDriver(new URL("http://127.0.0.1:" + prop.getProperty("appium.port") + "/wd/hub"), capabilities);
+            ANDROID_DRIVER = new AndroidDriver(new URL("http://10.8.0.3:" + prop.getProperty("appium.port") + "/wd/hub"), capabilities);
             return ANDROID_DRIVER;
         } catch (MalformedURLException e) {
             throw new Error(e);
